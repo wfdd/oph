@@ -2,5 +2,5 @@
 
 node_modules/.bin/postcss style.sss \
     -p sugarss \
-    -u autoprefixer precss \
+    -u autoprefixer postcss-nested-ancestors precss \
     -o style.css
