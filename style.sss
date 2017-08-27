@@ -1,4 +1,10 @@
 
+@each $font-weight in (regular, bold)
+  @font-face
+    font-family: "M+ 1c"
+    font-weight: $font-weight
+    src: url("fonts/mplus-1c-$(font-weight).woff") format("woff")
+
 *, *::before, *::after
   box-sizing: border-box
 
@@ -6,7 +12,7 @@ body
   margin: 2em 0
   max-width: calc(600px + 4em)
   padding: 0 2em
-  font-family: sans-serif
+  font-family: "M+ 1c", sans-serif
   font-feature-settings: "kern", "liga", "clig", "calt"
   color: #111
   line-height: 1.5
@@ -33,19 +39,21 @@ a
     flex-basis: 300px
     flex-grow: 0
     min-height: 200px
+    padding-bottom: .5em
     line-height: 1.4
 
     &__title, &__description
       padding: 0 1em
 
     &__title
-      font-weight: bold
-      margin: 0
+      margin: .2em 0 0
+      font-size: 1em
+      text-transform: uppercase
 
       a
         display: block
-        padding-top: 1em
-        padding-bottom: 1em
+        padding-top: .6em
+        padding-bottom: .6em
 
     &__description
       font-size: .95em
