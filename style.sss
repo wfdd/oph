@@ -45,20 +45,13 @@ a
     padding-bottom: .5em
     line-height: 1.4
 
-    &__title, &__description
+    &__header, &__description
       padding: 0 1em
 
-    &__title
+    &__header
       display: flex
       align-items: center
-      margin: .2em 0 0
-      font-size: 1em
       text-transform: uppercase
-
-      a
-        flex-grow: 1
-        padding-top: .6em
-        padding-bottom: .6em
 
     &__description
       font-size: .95em
@@ -67,38 +60,59 @@ a
       background-color: lightsalmon
       color: color(lightsalmon shade(80%))
 
-      ^&__title
+      ^&__header
         background-color: color(lightsalmon shade(5%))
 
     &--neavouli
       background-color: beige
       color: color(beige shade(80%))
 
-      ^&__title
+      ^&__header
         background-color: color(beige shade(5%))
 
     &--erotiseis
       background-color: lightsteelblue
       color: color(lightsteelblue shade(80%))
 
-      ^&__title
+      ^&__header
         background-color: color(lightsteelblue shade(5%))
 
     &--someone-has-to-do-this
       background-color: lightgreen
       color: color(lightgreen shade(80%))
 
-      ^&__title
+      ^&__header
         background-color: color(lightgreen shade(5%))
 
     &--cyfoi
       background-color: plum
       color: color(plum shade(80%))
 
-      ^&__title
+      ^&__header
         background-color: color(plum shade(5%))
 
-.wip
-  border: 1px solid #444
-  padding: 0 .3em
-  font-size: .75em
+.header
+  &__title
+    flex-grow: 1
+    margin: .2em 0 0
+    padding-top: .6em
+    padding-bottom: .6em
+    font-size: 1em
+
+    a
+      display: block
+
+  &__github-icon
+    width: 20px
+    height: 20px
+    background-image: url("github.svg")
+    text-indent: -9000px
+
+    &:hover
+      opacity: .7
+
+  &__wip-label
+    border: 1px solid #444
+    padding: 0 .3em
+    font-size: .75em
+    font-weight: bold
