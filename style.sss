@@ -49,12 +49,14 @@ a
       padding: 0 1em
 
     &__title
+      display: flex
+      align-items: center
       margin: .2em 0 0
       font-size: 1em
       text-transform: uppercase
 
       a
-        display: block
+        flex-grow: 1
         padding-top: .6em
         padding-bottom: .6em
 
@@ -95,3 +97,8 @@ a
 
       ^&__title
         background-color: color(plum shade(5%))
+
+.wip
+  border: 1px solid #444
+  padding: 0 .3em
+  font-size: .75em
