@@ -8,6 +8,10 @@
 *, *::before, *::after
   box-sizing: border-box
 
+html[lang="el"]
+  p
+    letter-spacing: -.5px
+
 body
   margin: 2em 0
   max-width: calc(600px + 4em)
@@ -25,6 +29,28 @@ a
 
   &:hover
     text-decoration: underline
+
+.site-header
+  display: flex
+  align-items: center
+
+  h1
+    flex-grow: 1
+
+.lang-switcher
+  padding-left: 1em
+
+  a
+    display: inline-block
+    padding: 0 .5em
+    border: 1px solid #aaa
+    border-radius: .5em
+    line-height: 2
+    font-size: .95em
+
+    &:hover
+      background-color: #eee
+      text-decoration: none
 
 .strapline
   font-size: 1.1em
