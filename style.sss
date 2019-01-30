@@ -1,23 +1,12 @@
 
-@each $font-weight in (regular, bold)
-  @font-face
-    font-family: "M+ 1c"
-    font-weight: $font-weight
-    src: url("fonts/mplus-1c-$(font-weight).woff") format("woff")
-
 *, *::before, *::after
   box-sizing: border-box
-
-html[lang="el"]
-  p,
-  h2
-    letter-spacing: -.5px
 
 body
   margin: 2em 0
   max-width: calc(600px + 4em)
   padding: 0 2em
-  font-family: "M+ 1c", sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif
   font-feature-settings: "kern", "liga", "clig", "calt"
   color: #111
   line-height: 1.5
