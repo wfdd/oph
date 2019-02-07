@@ -1,10 +1,11 @@
 
-*, *::before, *::after
+*,
+*::before,
+*::after
   box-sizing: border-box
 
 body
   margin: 2em 0
-  margin-left: auto
   max-width: calc(600px + 4em)
   padding: 0 2em
   font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif
@@ -26,17 +27,20 @@ a
 
   h1
     flex-grow: 1
+    letter-spacing: 3px
 
 .lang-switcher
   padding-left: 1em
 
   a
     display: inline-block
-    padding: 0 .5em
-    border: 1px solid #aaa
-    border-radius: .5em
-    line-height: 2
+    padding: 0 .75em
+    border: 2px solid #ccc
+    border-radius: .25em
+    line-height: 2.25
     font-size: .95em
+    font-weight: 500
+    transition: .2s background-color
 
     &:hover
       background-color: #eee
@@ -62,7 +66,8 @@ a
     padding-bottom: .5em
     line-height: 1.4
 
-    &__header, &__description
+    &__header,
+    &__description
       padding: 0 1em
 
     &__header
