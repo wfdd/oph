@@ -3,9 +3,27 @@
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "postcss": "^7.0.14",
-    "postcss-cli": "^6.1.1"
+    "postcss-cli": "^6.1.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
   },
   "scripts": {
     "build": "sassc -a style.sass | postcss -u autoprefixer -o style.css"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "block-closing-brace-empty-line-before": null,
+      "block-closing-brace-newline-after": null,
+      "block-closing-brace-newline-before": null,
+      "block-closing-brace-space-after": null,
+      "block-closing-brace-space-before": null,
+      "block-opening-brace-newline-after": null,
+      "block-opening-brace-newline-before": null,
+      "block-opening-brace-space-after": null,
+      "block-opening-brace-space-before": null,
+      "declaration-block-trailing-semicolon": null,
+      "number-leading-zero": null
+    }
   }
 }
